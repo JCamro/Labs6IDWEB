@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lenguajes</title>
 </head>
 <body>
     <header>
@@ -14,15 +14,21 @@
                 <li><a href="registro.html">REGISTRO</a></li>
                 <li><a href="lenguajes.html">LENGUAJES</a></li>
                 <li><a href="validacion.html">VALIDACION</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
+        <h2>Formulario de Preferencias</h2>
+        
         <form action="">
-            <h2>Formulario de Preferencias</h2>
+            <img src="https://www.unsa.edu.pe/oucalidad/wp-content/themes/observatorio/img/unsa-logo.png" alt="logo UNSA" width="50">   
+            <br></br> 
+            
             <label for="">¿Que lenguajes conoces?</label>
             <br>
+
             <input type="checkbox" name="lenguaje" id="html">
             <label for="html">HTML</label>
             <br>
@@ -37,14 +43,15 @@
             <br>
             <input type="checkbox" name="lenguaje" id="java">
             <label for="java">Java</label>
+            <br><br>
+            
+            <label for="">¿Cuantas horas de programacion estudias al dia?</label>
+            <br>
+            <input type="number" name="horas" id="1hora" required>
             <br>
 
-            <label for="">¿Cuantas horas de programacion estudias al dia?</label>
-            <input type="number" name="horas" id="1hora" required>
-            
             <button type="submit">Guardar</button>
 
-        
         </form>
     </main>
 </body>

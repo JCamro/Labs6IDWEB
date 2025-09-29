@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        <h1>Cursos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="registro.html">REGISTRO</a></li>
+                <li><a href="lenguajes.html">LENGUAJES</a></li>
+                <li><a href="validacion.html">VALIDACION</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Inscripcion a un Curso</h2>
+        <form action="">
+
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombreu" id="nombre" pattern="[A-Za-z]+" title="Solo letras mayusculas y minusculas" required>
+            <br><br>
+
+            <label for="apellido">Apellido</label>
+            <br>
+            <input type="text" name="nombreu" id="nombre" pattern="[A-Za-z]+" title="Solo letras mayusculas y minusculas" required>
+            <br><br>
+            
+            <label for="dni">Documento de Identidad</label>
+            <br>
+            <input type="number" name="dni" id="dni" min="1000000" max="99999999" title="Ingresa un DNI valido" required>
+            <br><br>
+
+            <label for="correo">Correo</label>
+            <br>
+            <input type="email" name="correou" id="correo" required>
+            <br><br>
+
+            <label for="curso">Cursos</label>
+            <br>
+            <select name="cursou" id="curso">
+                <option value="idw">Introduccion al Desarrollo Web</option>
+                <option value="dsoo">Desarrollo de Software Orientado a Objetos</option>
+                <option value="am">Analisis Matematico</option>
+            </select>
+
+            <br><br>
+            <label>Modalidad</label>
+            <br>
+
+            <input type="radio" name="modalidad" id="presencial" value="p" checked>
+            <label for="presencial">Presencial</label>
+            <br>
+            <input type="radio" name="modalidad" id="virtual" value="v" checked>
+            <label for="virtual">Virtual</label>
+            <br><br>
+
+            <label for="horarios">Horarios Disponibles</label><br>
+            <input type="checkbox" name="horarios" id="manana">
+            <label for="manana">Mañana</label> 
+            <br>
+            <input type="checkbox" name="horarios" id="tarde">
+            <label for="tarde">Tarde</label> 
+            <br>
+            <input type="checkbox" name="horarios" id="noche">
+            <label for="noche">Noche</label>
+            <br><br>
+
+            <label for="comentarios">Comentarios Adicionales</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" placeholder="Escribe aqui tus comentarios..."></textarea>
+            <br><br>
+            <button type="reset">Restablecer</button>
+            <br>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
