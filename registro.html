@@ -7,23 +7,27 @@
 </head>
 <body>
     <main>
-        <form action="">
-            <h2>Suscribirse a Boletin</h2>
+        <h2>Suscribirse a Boletin</h2>
+
+        <form action="#" method="post">
+            
             <label for="nombre">NOMBRE</label><br>
-            <input type="text" name="nombreu" id="nombre">
+            <input type="text" name="nombreu" id="nombre" required>
             <br><br>
             <label for="apellido">APELLIDOS</label><br>
-            <input type="text" name="apellidou" id="apellido">
+            <input type="text" name="apellidou" id="apellido" required>
             <br><br>
             <label for="correo">CORREO ELECTRONICO</label><br>
-            <input type="email" name="correou" id="correo">
+            <input type="email" name="correou" id="correo" required>
             <br><br>
             
             <input type="checkbox" name="aceptar" id="aceptar">
             <label for="aceptar">Acepto recibir correos promocionales</label>
             <br><br>
             
-            <button>Suscribirse</button>
+            <button type="reset">Borrar</button>
+            <br>
+            <button type="submit">Suscribirse</button>
         </form>
     </main>
 </body>
